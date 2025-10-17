@@ -38,7 +38,7 @@ We will use the paper "Gene regulatory network inference in the era of single-ce
 
 **Date:** November 7th, 2025  
 **Time:** 1:30 PM - 2:30 PM  
-**Venue:** Online (details to be announced)
+**Venue:** OEE1017 (On-campus)
 
 ---
 
@@ -65,4 +65,4 @@ Dr. Simon Wang is available to conduct tailored workshops focusing on AI-assiste
 - Subject: "Bioinformatics AI Workshop Request"
 - Include: Team size, research focus, preferred dates/times
 
-*Workshops can be conducted in-person or online, with materials customized to your research needs.*
+*Workshops are conducted on-campus, with materials customized to your research needs.*

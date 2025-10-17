@@ -24,7 +24,7 @@ The workshop includes hands-on exploration of the "litstudy" repository https://
 
 **Date:** November 28th, 2025
 **Time:** 10:30 AM - 12:30 PM
-**Venue:** Online and PolyU Hung Hom Bay Campus (details to be announced)
+**Venue:** OEE1017 (On-campus)
 
 ---
 
@@ -40,4 +40,4 @@ Dr. Simon Wang is available to conduct customized workshops for HKBU research te
 - Subject: "AI Agents Workshop Booking Request"
 - Include: Team size, preferred dates/times, and specific research focus areas
 
-*Workshops can be conducted in-person or online, with materials and resources provided in advance.*
+*Workshops are conducted on-campus, with materials and resources provided in advance.*

@@ -8,7 +8,7 @@ A demonstration repository showing how IDE-embedded AI agents can transform bioi
 
 **Date:** November 7th, 2025  
 **Time:** 1:30 PM - 2:30 PM  
-**Format:** Online  
+**Format:** On-campus (Venue: OEE1017)  
 **Speaker:** Dr. Simon Wang, HKBU
 
 ## 🎯 Overview
@@ -23,20 +23,36 @@ This workshop demonstrates how AI agents can:
 
 ```
 Agent4BioPhD/
+├── demos/                         # Demo scripts for key tools
+│   ├── warmup_paper_analysis.py   # AI agent paper analysis demo
+│   ├── litstudy_demo.py           # Demo for literature analysis
+│   ├── motifmatchr_demo.R         # Demo for motif matching
+│   └── README.md                  # Demos documentation
 ├── docs/                          # Workshop documentation
+│   ├── AI_Agent_Demo_Plan.md      # AI agent demonstration plan
 │   ├── Badia-i-Mompel et al 2023.md    # Case study paper
-│   ├── abstractNov7.md                  # Workshop abstract
-│   ├── posterNov7.md                    # Poster abstract
-├── litstudy/                      # Literature analysis tool (Python)
-├── motifmatchr/                   # TF motif matching tool (R)
-├── scripts/                       # AI-generated demo scripts
-│   └── demo1_extract_methods.py        # Automated paper analysis
-├── outputs/                       # Results and visualizations
-│   ├── paper_analysis_report.txt       # Generated analysis report
-│   └── paper_analysis_report.json      # Structured data output
+│   ├── GRN_Literature_Analysis_Plan.md # Gene regulatory network analysis plan
+│   ├── Hands_On_Exercises.md      # Workshop exercises
+│   ├── LitStudyBriefing.md        # LitStudy package documentation
+│   ├── abstractNov7.md            # Workshop abstract
+│   ├── abstractPolyU.md           # PolyU workshop abstract
+│   ├── posterNov7.md              # Poster abstract
+│   ├── game/                      # Educational games
+│   └── workshop/                  # Workshop materials
+├── scripts/                       # Utility scripts
+│   ├── demo1_extract_methods.py   # Paper analysis script
+│   ├── demo2_motif_analysis.R     # Motif analysis script
+│   └── demo2_prepare_analysis.py  # Analysis preparation script
+├── outputs/                       # Results and examples
+│   ├── example_peaks.bed          # Example genomic peaks
+│   ├── example_peaks.csv          # Example data in CSV format
+│   ├── integration_guide.md       # Integration documentation
+│   └── paper_analysis_report.txt  # Analysis report output
 ├── DEMO_PLAN.md                   # Detailed workshop plan
 └── README.md                      # This file
 ```
+
+> Note: litstudy and motifmatchr are external packages that need to be installed separately (see installation instructions below).
 
 ## 🚀 Quick Start
 
@@ -64,14 +80,28 @@ pip install litstudy pandas matplotlib networkx
 #### R Setup (for motifmatchr)
 ```r
 # In R console
-install.packages("devtools")
-devtools::install_github("GreenleafLab/motifmatchr")
-
-# Install Bioconductor packages
-if (!require("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install(c("GenomicRanges", "TFBSTools", "BSgenome.Hsapiens.UCSC.hg19"))
+install.packages("BiocManager")
+BiocManager::install(c("motifmatchr", "GenomicRanges", "BiocParallel", 
+                     "JASPAR2020", "TFBSTools", "BSgenome.Hsapiens.UCSC.hg38"))
 ```
+
+### Running Demos
+
+```bash
+# Navigate to the demos directory
+cd demos
+
+# Run the warm-up paper analysis demo
+python ../scripts/demo1_extract_methods.py
+
+# Run the litstudy demo
+python litstudy_demo.py
+
+# Run the motifmatchr demo
+Rscript motifmatchr_demo.R
+```
+
+See the [demos/README.md](demos/README.md) for more detailed information about each demo.
 
 ## 🔬 Case Study
 
@@ -83,7 +113,17 @@ We use the paper **"Gene regulatory network inference in the era of single-cell 
 
 ## 💡 Demo Examples
 
-### Demo 1: Automated Paper Analysis (Already Run!)
+We've created three demonstration scripts that showcase different aspects of bioinformatics analysis:
+
+1. **Warm-up Paper Analysis** - Demonstrates how an AI agent can analyze research papers and identify related literature.
+
+2. **LitStudy Demo** - Shows how to use the litstudy package for systematic literature reviews and analysis of research trends.
+
+3. **Motifmatchr Demo** - Demonstrates transcription factor binding site analysis using R's motifmatchr package.
+
+See the [demos/README.md](demos/README.md) file for detailed instructions on running these demos.
+
+### Demo 1: Automated Paper Analysis
 
 Check out the generated report: `outputs/paper_analysis_report.txt`
 
@@ -100,12 +140,6 @@ Check out the generated report: `outputs/paper_analysis_report.txt`
 python scripts/demo1_extract_methods.py
 ```
 
-### Demo 2: Literature Network Analysis (Coming Soon)
-Use `litstudy` to analyze citation networks related to gene regulatory networks.
-
-### Demo 3: Motif Analysis Workflow (Coming Soon)
-Generate R code using `motifmatchr` for transcription factor binding site prediction.
-
 ## 🛠️ Key Tools Featured
 
 ### 1. [litstudy](https://github.com/NLeSC/litstudy) - Literature Analysis
@@ -114,11 +148,25 @@ Generate R code using `motifmatchr` for transcription factor binding site predic
 - Author collaboration networks
 - Topic modeling with NLP
 
+For detailed usage, see our [litstudy demo](demos/litstudy_demo.py) or visit the [official repository](https://github.com/NLeSC/litstudy).
+
 ### 2. [motifmatchr](https://github.com/GreenleafLab/motifmatchr) - TF Motif Matching
 - R package for fast motif matching
 - Uses MOODS library (C++ backend)
 - Works with ATAC-seq/ChIP-seq peaks
 - Integrates with JASPAR, TRANSFAC, HOCOMOCO databases
+
+For detailed usage, see our [motifmatchr demo](demos/motifmatchr_demo.R) or visit the [official repository](https://github.com/GreenleafLab/motifmatchr)
+
+## 🎯 Learning Objectives
+
+By using this repository, you will learn to:
+
+1. Use AI agents to analyze research papers and identify related literature
+2. Perform systematic literature reviews using litstudy
+3. Analyze transcription factor binding sites using motifmatchr
+4. Integrate insights from literature and motif analysis for bioinformatics research
+5. Combine Python and R tools in a comprehensive workflow
 
 ## 📊 What Makes AI Agents Powerful?
 
@@ -179,4 +227,4 @@ See [LICENSE](LICENSE) file for details.
 
 **Ready to experience the power of AI agents in bioinformatics research?** 🚀
 
-Fork this repo and let's get started! 
+Fork this repo and let's get started!
