@@ -82,6 +82,18 @@ if check_python; then
         echo "Warning: litstudy_demo.py not found. Skipping..."
         echo
     fi
+    
+    # Run litstudy_badia_demo.py (new Badia-i-Mompel paper analysis)
+    if [ -f "$SCRIPT_DIR/litstudy_badia_demo.py" ]; then
+        echo "Running litstudy_badia_demo.py (Badia-i-Mompel paper analysis)"
+        python3 "$SCRIPT_DIR/litstudy_badia_demo.py" || python "$SCRIPT_DIR/litstudy_badia_demo.py"
+        echo
+        echo "LitStudy Badia-i-Mompel demo completed successfully."
+        echo
+    else
+        echo "Warning: litstudy_badia_demo.py not found. Skipping..."
+        echo
+    fi
 fi
 
 # Run motifmatchr demo
