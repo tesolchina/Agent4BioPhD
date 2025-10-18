@@ -1,0 +1,97 @@
+{
+  "methods_and_tools": {
+    "inference_methods": [
+      "ARACNE",
+      "ARACNe",
+      "GENIE3",
+      "GRNBoost2",
+      "Inferelator",
+      "SCENIC",
+      "WGCNA"
+    ],
+    "experimental_technologies": [
+      "ATAC-seq",
+      "CUT&Tag",
+      "ChIP-seq",
+      "Hi-C",
+      "RNA-seq",
+      "multi-omics",
+      "multimodal",
+      "scRNA-seq",
+      "single-cell"
+    ],
+    "bioinformatics_tools": [
+      "ArchR",
+      "FIMO",
+      "GimmeMotifs",
+      "HOMER",
+      "MOODS",
+      "Signac",
+      "motifmatchr"
+    ],
+    "databases": [
+      "CIS-BP",
+      "ENCODE",
+      "HOCOMOCO",
+      "JASPAR",
+      "TRANSFAC",
+      "UniPROBE",
+      "cisTarget"
+    ],
+    "software_packages": []
+  },
+  "mention_counts": {
+    "single-cell": 104,
+    "multi-omics": 26,
+    "ChIP-seq": 16,
+    "multimodal": 15,
+    "ATAC-seq": 11,
+    "Hi-C": 11,
+    "scRNA-seq": 11,
+    "SCENIC": 8,
+    "RNA-seq": 8,
+    "CUT&Tag": 6,
+    "ENCODE": 6,
+    "GRNBoost2": 3,
+    "Inferelator": 3,
+    "GimmeMotifs": 3,
+    "HOMER": 3,
+    "JASPAR": 3,
+    "TRANSFAC": 3,
+    "UniPROBE": 3,
+    "WGCNA": 2,
+    "FIMO": 2,
+    "MOODS": 2,
+    "motifmatchr": 2,
+    "HOCOMOCO": 2,
+    "cisTarget": 2,
+    "ARACNE": 1,
+    "ARACNe": 1,
+    "GENIE3": 1,
+    "ArchR": 1,
+    "Signac": 1,
+    "CIS-BP": 1
+  },
+  "key_concepts": {
+    "transcription_factors": [
+      "Here, we review the key principles of inferring GRNs that encompass transcription factor\u2013gene interactions from transcriptomics and chromatin accessib...",
+      "Transcription factors (TFs) bind to promoter regions and cis-regulatory elements (CREs), displacing nucleosomes and making the transcription start sit...",
+      "A list of known transcription factor (TF) genes is obtained from other sources to distinguish genes with regulatory capabilities..."
+    ],
+    "gene_regulation": [
+      "figure 1\na, Gene regulation and its key elements...",
+      "Multiple components of gene regulation, such as TFs, splicing factors, long non-coding RNAs, microRNAs and metabolites, can be incorporated in GRNs...",
+      "The inclusion and measurement of these other aspects of gene regulation has the potential to generate GRNs that better represent gene regulation in vi..."
+    ],
+    "single_cell": [
+      "We focus on the comparison and classification of methods that use single-cell multimodal data...",
+      "c, GRNs generated from single-cell omics data allow to understand cell type and state specificity, explain the progression of dynamic trajectories and...",
+      "This limitation has been overcome by the use of single-cell technologies24,25, allowing the inference of GRNs across different cell types, differentia..."
+    ],
+    "chromatin_accessibility": [
+      "Here, we review the key principles of inferring GRNs that encompass transcription factor\u2013gene interactions from transcriptomics and chromatin accessib...",
+      "For example, the inclusion of chromatin accessibility21 data allows to fine-tune TF\u2013gene links by considering whether genes are open and by including ...",
+      "Nevertheless, inference from transcriptomics data alone introduces false positives as many other mechanisms that are involved in gene regulation, such..."
+    ]
+  }
+}

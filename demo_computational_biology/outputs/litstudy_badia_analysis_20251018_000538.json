@@ -1,0 +1,71 @@
+{
+  "report_title": "Analysis Report: Gene regulatory network inference in the era of single-cell multi-omics",
+  "analysis_date": "2025-10-18 00:05:38",
+  "paper_metadata": {
+    "title": "Gene regulatory network inference in the era of single-cell multi-omics",
+    "authors": [
+      "Pau Badia-i-Mompel",
+      "Lorna Wessels",
+      "Sophia Müller-Dott",
+      "Rémi Trimbour",
+      "Ricardo O. Ramirez Flores",
+      "Ricard Argelaguet",
+      "Julio Saez-Rodriguez"
+    ],
+    "year": 2023,
+    "venue": "Nature Reviews Genetics",
+    "citations": 293
+  },
+  "content_analysis": {
+    "title": "Gene regulatory network inference in the era of single-cell multi-omics",
+    "authors_count": 7,
+    "first_author": "Pau Badia-i-Mompel",
+    "publication_year": 2023,
+    "journal": "Nature Reviews Genetics",
+    "mentioned_methods": [],
+    "citation_analysis": {
+      "citation_count": 293,
+      "impact_assessment": "High impact"
+    },
+    "paper_type": "Review Article",
+    "key_topics": [
+      [
+        "gene regulatory networks",
+        "biology"
+      ],
+      [
+        "GRN inference",
+        "methods"
+      ],
+      [
+        "single-cell multi-omics",
+        "technologies"
+      ],
+      [
+        "transcription factors",
+        "biology"
+      ],
+      [
+        "chromatin accessibility",
+        "biology"
+      ],
+      [
+        "transcriptomics",
+        "technologies"
+      ]
+    ]
+  },
+  "key_findings": [
+    "The paper is a Review Article published in Nature Reviews Genetics in 2023.",
+    "It has 293 citations, indicating High impact.",
+    "The authors discuss 0 key methodologies in the field of gene regulatory network inference.",
+    "This paper provides a comprehensive review of GRN inference methods, particularly focusing on single-cell multi-omics approaches."
+  ],
+  "litstudy_capabilities_demonstrated": [
+    "Paper metadata extraction and organization",
+    "Content analysis and keyword identification",
+    "Methodology recognition",
+    "Impact assessment",
+    "Structured report generation"
+  ]
+}

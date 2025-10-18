@@ -1,0 +1,25 @@
+LITSTUDY SIMPLE DEMO RESULTS
+Generated on: 2025-10-18 00:25:01
+
+Total papers: 3
+
+PAPER LIST:
+
+1. Inference of Gene Regulatory Networks from Single-Cell Data
+   Authors: Author A, Author B
+   Year: 2022
+   Venue: Nature Methods
+   Abstract: This paper introduces a novel method for GRN inference...
+
+2. Deep Learning Approaches for GRN Inference
+   Authors: Author F
+   Year: 2023
+   Venue: Neural Networks
+   Abstract: Deep learning techniques are applied to gene regulatory...
+
+3. Single-Cell Transcriptomics and GRN Dynamics
+   Authors: Author I, Author J, Author K, Author L
+   Year: 2022
+   Venue: Cell
+   Abstract: This study investigates dynamic changes in regulatory networks...
+

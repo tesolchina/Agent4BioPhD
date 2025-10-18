@@ -1,0 +1,11 @@
+title,authors,year,venue
+Inferring Gene Regulatory Networks from Single-Cell RNA-Seq Data,John Smith, Jane Doe,2021,Nature Methods
+Machine Learning Approaches for GRN Inference,Alice Chen, Bob Wang, Charlie Brown,2022,Bioinformatics
+CellOracle: A Computational Framework for Cell Identity Transition Analysis,Tashiro A, Matsumoto K, Tanaka Y,2021,Cell Systems
+SCENIC+: Single-cell regulatory network inference and clustering,Aibar S, Van de Sande B, Lijnzaad P,2020,Nature Protocols
+CytoTRACE infers differentiation states from single-cell RNA-seq data,Gulati G, Trapnell C, Kelley DR,2020,Cell
+CellChat: Inference and analysis of cell-cell communication,Jin S, Guo S, Zhang L,2021,Nature Communications
+NicheNet: Modeling cell-cell communication by linking ligands to target genes,Browaeys R, Saelens W, Carmona S,2020,Nature Methods
+Integrating multi-omics data to infer gene regulatory networks,Wang Y, Li H, Zhang Z,2023,Science
+Transcription factor binding prediction using deep learning,Zhang M, Chen J, Zhao W,2022,Genome Research
+Network biology approaches for analyzing gene regulatory networks,Liu X, Wang J, Chen L,2023,Molecular Systems Biology

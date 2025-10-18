@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent4BioPhD - AI Agent Workshop Materials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 50px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .header p {
+            font-size: 1.3em;
+            color: #666;
+        }
+        
+        .game-banner {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+            border: 3px solid #ffc107;
+        }
+        
+        .game-banner h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .game-banner p {
+            font-size: 1.2em;
+            color: #555;
+            margin: 10px 0;
+        }
+        
+        .play-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.3em;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .play-button:hover {
+            background: #5568d3;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f0f4ff 0%, #fff 100%);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border-left: 5px solid #667eea;
+        }
+
+        .hero h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .card {
+            background: white;
+            border: 3px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+
+        .card-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #5568d3;
+            transform: scale(1.05);
+        }
+
+        .btn-secondary {
+            background: #95e1d3;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #7dd3c0;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .feature {
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            color: #666;
+        }
+
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: #24292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: all 0.3s;
+        }
+
+        .github-link:hover {
+            background: #1a1f23;
+            transform: scale(1.05);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #ffd700;
+            color: #333;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧬 Agent4BioPhD</h1>
+            <p>AI Agent Workshop Materials for Biology PhD Students</p>
+        </div>
+
+        <div class="hero">
+            <h2>🎮 Featured: TF Detective Game <span class="badge">NEW!</span></h2>
+            <p><strong>Learn motifmatchr through an interactive game!</strong></p>
+            <p>An educational HTML game that teaches transcription factor binding and motif matching concepts. Perfect for freshmen or anyone new to bioinformatics - no prerequisites needed!</p>
+            <a href="game/TF_Binding_Game.html" class="btn" style="margin-top: 20px; font-size: 1.2em;">🎮 Play the Game Now!</a>
+        </div>
+
+        <h2 style="color: #667eea; margin: 40px 0 20px 0; font-size: 2em;">📚 Workshop Materials</h2>
+
+        <div class="cards">
+            <a href="START_HERE.md" class="card">
+                <div class="card-icon">🚀</div>
+                <h3>Start Here</h3>
+                <p>New to these materials? Begin with this navigation guide that helps you choose your learning path.</p>
+                <span class="btn btn-secondary">Get Started →</span>
+            </a>
+
+            <a href="AI_Agent_Demo_Plan.md" class="card">
+                <div class="card-icon">📖</div>
+                <h3>Demo Plan</h3>
+                <p>Complete 5-phase demonstration plan showing how AI agents accelerate bioinformatics research.</p>
+                <span class="btn btn-secondary">View Plan →</span>
+            </a>
+
+            <a href="Instructor_Quick_Reference.md" class="card">
+                <div class="card-icon">👨‍🏫</div>
+                <h3>For Instructors</h3>
+                <p>Teaching guide with demo scripts, timing options (1h/2h/3h), and troubleshooting tips.</p>
+                <span class="btn btn-secondary">Teaching Guide →</span>
+            </a>
+
+            <a href="Hands_On_Exercises.md" class="card">
+                <div class="card-icon">✏️</div>
+                <h3>Student Exercises</h3>
+                <p>5 progressive hands-on exercises from beginner to advanced, with prompts and reflection questions.</p>
+                <span class="btn btn-secondary">Start Exercises →</span>
+            </a>
+
+            <a href="README.md" class="card">
+                <div class="card-icon">💡</div>
+                <h3>Philosophy</h3>
+                <p>Understand what makes this "agent" not just "code generator" and how to use AI effectively.</p>
+                <span class="btn btn-secondary">Learn More →</span>
+            </a>
+
+            <a href="INDEX.md" class="card">
+                <div class="card-icon">📑</div>
+                <h3>Full Index</h3>
+                <p>Complete documentation index with learning pathways and competency levels.</p>
+                <span class="btn btn-secondary">Browse All →</span>
+            </a>
+        </div>
+
+        <h2 style="color: #667eea; margin: 40px 0 20px 0; font-size: 2em;">✨ What You'll Learn</h2>
+
+        <div class="features">
+            <div class="feature">
+                <h4>🧬 DNA & TF Biology</h4>
+                <p>Understand DNA structure, transcription factors, and gene regulation</p>
+            </div>
+            <div class="feature">
+                <h4>🔍 Motif Matching</h4>
+                <p>Learn how motifmatchr finds TF binding sites in genomic sequences</p>
+            </div>
+            <div class="feature">
+                <h4>📊 Statistical Concepts</h4>
+                <p>Understand p-values, background frequencies, and enrichment testing</p>
+            </div>
+            <div class="feature">
+                <h4>⚡ MOODS Algorithm</h4>
+                <p>Discover why motifmatchr is fast enough for single-cell data</p>
+            </div>
+            <div class="feature">
+                <h4>🕸️ Gene Regulatory Networks</h4>
+                <p>See how motif matching fits into GRN inference workflows</p>
+            </div>
+            <div class="feature">
+                <h4>🤖 AI Collaboration</h4>
+                <p>Develop skills to effectively use AI agents in research</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 50px 0;">
+            <h2 style="color: #667eea; margin-bottom: 30px;">🎯 Target Audience</h2>
+            <div style="background: #f0f4ff; padding: 30px; border-radius: 15px; text-align: left; max-width: 800px; margin: 0 auto;">
+                <p style="font-size: 1.1em; line-height: 2em; margin-bottom: 20px;">
+                    <strong>Biology PhD students</strong> with programming experience who want to:
+                </p>
+                <ul style="list-style: none; padding: 0; font-size: 1.1em; line-height: 2.5em;">
+                    <li>✅ Accelerate their computational research</li>
+                    <li>✅ Understand (not just use) bioinformatics tools</li>
+                    <li>✅ Design novel analyses with confidence</li>
+                    <li>✅ Make informed methodological choices</li>
+                    <li>✅ Develop computational thinking skills</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 50px 0;">
+            <h2 style="color: #667eea; margin-bottom: 30px;">📖 Based on Current Research</h2>
+            <div style="background: #fff9e6; padding: 30px; border-radius: 15px; border-left: 5px solid #ffd700;">
+                <p style="font-size: 1.1em; line-height: 1.8;">
+                    Materials connect implementation to literature, featuring insights from:<br>
+                    <strong>Badia-i-Mompel et al. (2023)</strong> <em>Nature Reviews Genetics</em><br>
+                    "Gene regulatory network inference in the era of single-cell multi-omics"
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="https://github.com/tesolchina/Agent4BioPhD" class="github-link">
+                <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                View on GitHub
+            </a>
+            <p style="margin-top: 20px; font-size: 0.9em;">
+                Created for the Agent4BioPhD project<br>
+                Teaching AI literacy in biological research
+            </p>
+            <p style="margin-top: 20px; color: #999;">
+                Last updated: October 2025
+            </p>
+        </div>
+    </div>
+</body>
+</html>

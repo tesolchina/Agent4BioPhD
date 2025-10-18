@@ -1,0 +1,33 @@
+{
+  "title": "LitStudy Analysis Report: Gene Regulatory Networks",
+  "date": "2025-10-18 00:38:17",
+  "collection_size": 10,
+  "publication_years": [
+    2021,
+    2022,
+    2020,
+    2023
+  ],
+  "top_venues": [
+    [
+      "Nature Methods",
+      2
+    ],
+    [
+      "Bioinformatics",
+      1
+    ],
+    [
+      "Cell Systems",
+      1
+    ]
+  ],
+  "analysis_notes": [
+    "This is a demonstration of litstudy capabilities for systematic literature review",
+    "In a real analysis, you would use additional litstudy features:",
+    "- Citation network analysis",
+    "- Topic modeling and keyword extraction",
+    "- Visualization of research trends",
+    "- Comparative analysis of different research areas"
+  ]
+}

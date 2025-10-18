@@ -1,0 +1,9 @@
+chr,start,end,peak_id,score,annotation
+chr1,1000000,1000500,peak_1,100,promoter
+chr1,2500000,2500500,peak_2,85,enhancer
+chr2,1500000,1500500,peak_3,92,promoter
+chr2,3000000,3000500,peak_4,78,enhancer
+chr3,1200000,1200500,peak_5,88,enhancer
+chr3,2800000,2800500,peak_6,95,promoter
+chr17,7571719,7572219,peak_7,120,promoter
+chr17,7590856,7591356,peak_8,110,enhancer
