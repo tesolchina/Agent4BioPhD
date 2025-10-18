@@ -1,9 +1,9 @@
-# AIagent4bio: Computational Biology Research Platform
+# AI Agents in Biological Research
 
-## Instructions for Participants
-1. **Fork the repository**: Click the 'Fork' button at the top right of the repository page
-2. **Review documentation**: [README.md](./README.md)
-3. **Access full repository**: [Agent4BioPhD on GitHub](https://github.com/tesolchina/Agent4BioPhD.git)
+## Workshop Overview
+AI agents have significant potential to transform and empower biological research by automating complex tasks, analyzing vast datasets, and generating novel insights. According to recent research, AI agents can streamline literature reviews, handle large datasets, and even write code to accelerate discovery processes <mcreference link="https://www.nature.com/articles/d41586-025-03246-7" index="0">0</mcreference>.
 
-## Abstract
-AIagent4bio integrates artificial intelligence with biological research, providing modular tools for gene regulatory networks, motif analysis, and literature studies. This platform accelerates biological discovery through automated analysis and enhanced data interpretation.
+## Workshop Content
+In this workshop, the speaker will demonstrate practical applications of AI agents in biological research, showcasing how these tools can assist with literature analysis, data processing, and experiment planning. Participants will learn about real-world implementations and best practices for integrating AI agents into research workflows.
+
+The presentation will include hands-on demonstrations of computational tools designed to enhance biological discovery through intelligent automation.
