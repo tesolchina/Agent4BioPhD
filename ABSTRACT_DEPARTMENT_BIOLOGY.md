@@ -1,9 +1,5 @@
-# AI Agents in Biological Research
+# AI Agents for Bioinformatics Research: Automating Literature Analysis and Computational Workflows
 
-## Workshop Overview
-AI agents have significant potential to transform and empower biological research by automating complex tasks, analyzing vast datasets, and generating novel insights. According to recent research, AI agents can streamline literature reviews, handle large datasets, and even write code to accelerate discovery processes <mcreference link="https://www.nature.com/articles/d41586-025-03246-7" index="0">0</mcreference>.
+This workshop demonstrates how IDE-embedded AI agents can streamline bioinformatics research by integrating literature analysis with computational tasks. Using Badia-i-Mompel et al. (2023) on gene regulatory networks as a case study, participants will learn to automate systematic literature reviews with litstudy and perform transcription factor binding analysis using motifmatchr. The session shows how AI agents can read scientific papers, extract computational methods, and generate executable code within a unified environment, eliminating context-switching between reading and coding tasks.
 
-## Workshop Content
-In this workshop, the speaker will demonstrate practical applications of AI agents in biological research, showcasing how these tools can assist with literature analysis, data processing, and experiment planning. Participants will learn about real-world implementations and best practices for integrating AI agents into research workflows.
-
-The presentation will include hands-on demonstrations of computational tools designed to enhance biological discovery through intelligent automation.
+Repository: https://github.com/tesolchina/Agent4BioPhD.git
