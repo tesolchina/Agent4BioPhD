@@ -1,0 +1,7 @@
+Title: 
+Authors: Thompson, D
+Journal: 
+Year: 2015
+
+Full Citation:
+Thompson, D., Regev, A. & Roy, S. Comparative analysis of gene regulatory networks: from network reconstruction to evolution. Annu. Rev. Cell Dev. Biol. 31, 399–428 (2015). CAS PubMed Google Scholar

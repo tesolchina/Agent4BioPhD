@@ -1,0 +1,7 @@
+Title: et al. Chromatin accessibility profiling methods
+Authors: Minnoye, L
+Journal: Nat. Rev. Methods Prim
+Year: 2021
+
+Full Citation:
+Minnoye, L. et al. Chromatin accessibility profiling methods. Nat. Rev. Methods Prim. 1, 1–24 (2021).
